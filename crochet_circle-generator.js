@@ -51,10 +51,8 @@ function circleMaker(rows) {
 			ratioString = ringRatio.join(", ");
 
 			// add pattern to instructions
-			//for (var post = 0; post < ringRatio.length; ++post) {
-				instructions += "Row " + row + ":\nch " + ch; //print step number and 1st step
-				instructions += "\nStarting with the next stitch, " + ratioString + " for " + total + " stitches\nJoin with sl st\n\n";
-			//}
+			instructions += "Row " + row + ":\nch " + ch; //print step number and 1st step
+			instructions += "\nStarting with the next stitch, " + ratioString + " for " + total + " stitches\nJoin with sl st\n\n";
 		}
 	}
 	return instructions;
