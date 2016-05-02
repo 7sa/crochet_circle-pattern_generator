@@ -1,11 +1,21 @@
-var rows = prompt("How many rows do you want in your circle?", "Enter a number");
-var st = prompt("Will you be using hdc or dc?");
-var ch;
+var rows = prompt("How many rows do you want in your circle?", "Enter a number"),
+	natl = prompt("Do you use UK or US terminology?").toLowerCase(),
+	st, ch;
 
-if (st === "hdc") {
-	ch = 2;
-} else if (st === "dc") {
-	ch = 3;
+if (natl === "uk") {
+	st = prompt("Will you be using htr or tr?");
+	if (st === "htr") {
+		ch = 2;
+	} else if (st === "tr") {
+		ch = 3;
+	}
+} else if (natl === "us") {
+	st = prompt("Will you be using hdc or dc?");
+	if (st === "hdc") {
+		ch = 2;
+	} else if (st === "dc") {
+		ch = 3;
+	}
 }
 
 
