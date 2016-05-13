@@ -31,7 +31,7 @@ function circleMaker(rows) {
 		// rows 2 & 3
 		if (row === 2) {
 			instructions += "Row 2:\nch " + ch + "\n" + st + " 11 into ring\nJoin with sl st\n\n";
-			instructions += "Row 3:\nch " + ch + "\n" + "Starting with next stitch, " + st + " twice into each stich for 23 stitches\nJoin with sl st\n\n";
+			instructions += "Row 3:\nch " + ch + "\n" + st + " once into same stitch.\nStarting with next stitch, " + st + " twice into each stich for 23 stitches\nJoin with sl st\n\n";
 			++row;
 		}
 
